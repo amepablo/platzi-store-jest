@@ -10,6 +10,12 @@ git:
 script:
   - yarn test
   - yarn build
+notifications:
+  email:
+    recipients:
+      - amepablo@gmail.com
+    on_success: always
+    on_failre: always
 deploy:
   provider: pages
   edge: true
